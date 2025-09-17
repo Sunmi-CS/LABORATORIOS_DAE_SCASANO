@@ -1,0 +1,55 @@
+:root{
+  --g1:#6a11cb; --g2:#2575fc;
+  --card-bg:#ffffff; --body-bg:#f5f7fb;
+  --text:#2a2a2a; --muted:#6c757d;
+  --accent:#ff7675; --ok:#2ecc71; --warn:#f1c40f;
+}
+
+html,body{height:100%}
+body{
+  background: linear-gradient(120deg, rgba(106,17,203,0.08), rgba(37,117,252,0.08)), var(--body-bg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+  color: var(--text);
+}
+
+.gradient-nav{
+  background: linear-gradient(90deg, var(--g1), var(--g2));
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+
+.card{
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.grid-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.exam-card{
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+  transition: transform .12s ease, box-shadow .12s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+.exam-card:hover{ transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,0.12); }
+
+.exam-title{ font-weight: 700; font-size: 1.1rem; margin-bottom: 6px; }
+.exam-desc{ color: var(--muted); font-size: .95rem; min-height: 38px; }
+.exam-meta{ display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+
+.badge-pill{
+  display:inline-block; padding:6px 10px; border-radius: 999px;
+  background: linear-gradient(90deg, var(--g1), var(--g2)); color:white; font-weight:600; font-size:.8rem;
+}
+
+.btn-gradient{
+  background: linear-gradient(90deg, var(--g2), var(--g1));
+  color: white; border: 0; padding: 8px 12px; border-radius: 10px; font-weight: 600;
+}
+.btn-gradient:hover{ filter: brightness(0.95); }

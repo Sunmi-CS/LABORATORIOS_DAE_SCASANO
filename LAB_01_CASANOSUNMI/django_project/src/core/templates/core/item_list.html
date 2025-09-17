@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Lista de Items</h2>
+  <ul id="items-list">
+    {% for item in items %}
+      <li>{{ item.name }} - {{ item.description }} ({{ item.created_at|date:"d/m/Y" }})</li>
+    {% empty %}
+      <li>No hay items disponibles.</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Agregar nuevo Item</h2>
+  <form id="item-form">
+      <input type="text" id="name" placeholder="Nombre del item" required>
+      <textarea id="description" placeholder="Descripción"></textarea>
+      <button type="submit">Agregar</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,18 @@
+/* Puro CSS, sin frameworks */
+:root{ --bg:#f6f8fb; --card:#ffffff; --accent:#2b7be4; --muted:#6b7280; --shadow: rgba(16,24,40,0.05); }
+
+*{box-sizing:border-box}
+body{ margin:0; font-family:Inter,Segoe UI,Arial; background:var(--bg); color:#0f172a; }
+.site-header{ background:linear-gradient(90deg,#2b7be4,#6a11cb); color:white; padding:18px 12px; text-align:center; }
+.container{ max-width:1100px; margin:26px auto; padding:0 12px; }
+
+.controls{ display:flex; gap:12px; align-items:center; margin-bottom:18px; flex-wrap:wrap; }
+.inline-form{ display:flex; gap:8px; align-items:center; }
+.inline-form input, .inline-form select, .inline-form button{ padding:8px 10px; border-radius:8px; border:1px solid #e6e9ee; }
+
+.grid{ display:grid; grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); gap:14px; }
+.card{ background:var(--card); border-radius:12px; padding:14px; box-shadow:0 6px 18px var(--shadow); border:1px solid rgba(15,23,42,0.04); }
+.card h3{ margin:0 0 8px 0; font-size:1.05rem; }
+.meta{ color:var(--muted); font-size:.9rem; margin-top:8px; }
+.btn{ background:var(--accent); color:white; border:0; padding:8px 10px; border-radius:8px; cursor:pointer; }
+.btn:active{ transform:translateY(1px) }

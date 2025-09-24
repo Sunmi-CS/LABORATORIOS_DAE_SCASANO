@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    
+    # Aqui se esta agregando las aplicaciones 
+    # en config/settings.py
     'rest_framework',  
     'quizzes',         
 ]
@@ -51,6 +53,8 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10
 }
 #-------------------------------------------------------
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -23,3 +23,11 @@ Sunmi Casaño Suarez
 ```bash
 git clone https://github.com/Sunmi-CS/LABORATORIOS_DAE_SCASANO/tree/main/Practica_02/healthtrack_api
 cd healthtrack_api
+
+http://127.0.0.1:8000/api/patients/
+http://127.0.0.1:8000/api/patients/3/
+http://127.0.0.1:8000/api/patients/?search=luis
+
+http://127.0.0.1:8000/api/doctors/
+http://127.0.0.1:8000/api/doctors/2/
+http://127.0.0.1:8000/api/doctors/?search=CARDIOLOGIA

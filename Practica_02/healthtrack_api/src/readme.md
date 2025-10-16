@@ -1,8 +1,10 @@
-# 🧑‍⚕️ HealthTrack API
+# HealthTrack API
 
 API REST desarrollada con **Django** y **Django REST Framework (DRF)** para la gestión de **Pacientes** y **Doctores**.  
 Cada paciente está asignado a un doctor, y la aplicación permite realizar todas las operaciones CRUD mediante endpoints, incluyendo búsqueda por nombre o diagnóstico.
 
+
+Sunmi Casaño Suarez
 ---
 
 ## Tecnologías Usadas

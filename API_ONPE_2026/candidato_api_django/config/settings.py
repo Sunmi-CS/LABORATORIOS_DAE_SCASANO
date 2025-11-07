@@ -63,6 +63,16 @@ CORS_ALLOW_ALL_ORIGINS = True  # Para desarrollo, permite todas las URLs
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 100,
+        'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    ),
+    'DEFAULT_PARSER_CLASSES': (
+        'rest_framework.parsers.JSONParser',
+    ),
+    'JSON_UNDERSCOREIZE': {
+        'no_underscore_before_number': True,
+    },
+
 }
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '10.0.2.2']
